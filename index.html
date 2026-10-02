@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for Scrapbook, an app for Root communities.">
+<title>Scrapbook Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: one readable column; a "taped" title card; sections as plain headed blocks with a short contents list. */
+:root {
+  --paper: #f7f8f6;
+  --card: #ffffff;
+  --ink: #1d2a2e;
+  --muted: #56666b;
+  --rule: #d9e0df;
+  --accent: #1f6f78;
+  --tape: #f3b6c4;
+  --mark: #fff1a8;
+  --mark-ink: #5a4500;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141a1c; --card: #1b2326; --ink: #e6eeee; --muted: #9fb0b3; --rule: #2c3a3e;
+    --accent: #6cc3cc; --tape: #b9677a; --mark: #4d4214; --mark-ink: #ffe9a0; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141a1c; --card: #1b2326; --ink: #e6eeee; --muted: #9fb0b3; --rule: #2c3a3e;
+  --accent: #6cc3cc; --tape: #b9677a; --mark: #4d4214; --mark-ink: #ffe9a0; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+img { max-width: 100%; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.65 var(--body);
+  padding-inline: 16px;
+  padding-block: 40px 64px;
+}
+.wrap { max-width: 44rem; margin: 0 auto; display: grid; gap: 28px; }
+
+.title-card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 34px 28px 26px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px -16px rgb(0 0 0 / 0.25);
+}
+.title-card::before {
+  /* a strip of washi tape holding the card down */
+  content: "";
+  position: absolute;
+  top: -12px; left: 50%;
+  width: 132px; height: 26px;
+  transform: translateX(-50%) rotate(-2deg);
+  background: repeating-linear-gradient(45deg, var(--tape) 0 8px, color-mix(in srgb, var(--tape) 70%, var(--card)) 8px 16px);
+  opacity: 0.9;
+  border-radius: 2px;
+}
+.eyebrow { font: 700 0.78rem/1 var(--body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; }
+h1 { font: 700 clamp(2rem, 5vw, 2.7rem)/1.1 var(--display); margin: 0 0 10px; text-wrap: balance; }
+.updated { color: var(--muted); margin: 0; font-size: 0.95rem; }
+.lede { margin: 18px 0 0; }
+
+.notice {
+  background: var(--mark);
+  color: var(--mark-ink);
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-size: 0.95rem;
+}
+.ph { background: var(--mark); color: var(--mark-ink); padding: 0 4px; border-radius: 3px; font-weight: 700; white-space: nowrap; }
+
+nav.toc { border-block: 1px solid var(--rule); padding-block: 14px; }
+nav.toc p { margin: 0 0 6px; font: 700 0.78rem/1 var(--body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+nav.toc ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+nav.toc a { color: var(--accent); text-decoration: none; font-size: 0.95rem; }
+nav.toc a:hover, nav.toc a:focus-visible { text-decoration: underline; }
+
+section { min-width: 0; }
+h2 { font: 600 1.4rem/1.25 var(--display); margin: 0 0 10px; text-wrap: balance; scroll-margin-top: 16px; }
+h3 { font: 700 1rem/1.4 var(--body); margin: 18px 0 6px; }
+p { margin: 0 0 12px; }
+ul.list { margin: 0 0 12px; padding-left: 1.2rem; display: grid; gap: 6px; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.contact { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 18px; }
+footer { color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--rule); padding-top: 16px; }
+</style>
+</head>
+<body>
+
+<main class="wrap">
+  <header class="title-card">
+    <p class="eyebrow">A Root community app</p>
+    <h1>Scrapbook Privacy Policy</h1>
+    <p class="updated">Last updated 2 October 2026</p>
+    <p class="lede">
+      Scrapbook gives a <a href="https://www.rootapp.com" target="_blank" rel="noopener">Root</a> community a shared page where
+      members place images, stickers, shapes and text. This policy explains what information Scrapbook handles, why, and who can
+      see it. Scrapbook is published by James (“we”).
+    </p>
+  </header>
+
+  <nav class="toc" aria-label="Contents">
+    <p>Contents</p>
+    <ul>
+      <li><a href="#stores">What we store</a></li>
+      <li><a href="#reads">What we read but don't store</a></li>
+      <li><a href="#device">On your device</a></li>
+      <li><a href="#never">What we don't do</a></li>
+      <li><a href="#visibility">Who can see what</a></li>
+      <li><a href="#retention">How long data is kept</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <p>
+      Scrapbook runs entirely inside Root. Root hosts the app, its data and its servers. Root's own
+      <a href="https://www.rootapp.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> and
+      <a href="https://www.rootapp.com/terms-of-use" target="_blank" rel="noopener">Terms of Use</a> apply to your use of Root,
+      including images you upload through Root's file picker.
+    </p>
+  </section>
+
+  <section id="stores">
+    <h2>What Scrapbook stores</h2>
+    <p>Scrapbook keeps its data in storage Root provides to the app, separately for each community it's installed in. One community's data is never shared with another.</p>
+    <h3>Things members add</h3>
+    <ul class="list">
+      <li>Images, stickers, shapes and text boxes, with their position, size, rotation, crop, colour adjustments, frame and stroke, shape style and text style.</li>
+      <li>Which page each item is on, the Root user ID of the member who added it, who last changed it and when, and whether it's locked.</li>
+      <li>Pages (name, order and the user ID of the member who created them) and each page's background.</li>
+    </ul>
+    <h3>Images</h3>
+    <ul class="list">
+      <li>Images chosen with <b>Add image</b> are uploaded to Root's file storage by Root. Scrapbook stores only the reference Root returns.</li>
+      <li>Images pasted or dragged in are stored in Scrapbook's own storage with their size, file type and the uploader's user ID. Large still images are resized and re-compressed on your device before upload.</li>
+    </ul>
+    <h3>Settings chosen by the community's Scrapbook admins</h3>
+    <ul class="list">
+      <li>Item limits, including any per-member limits (stored by user ID).</li>
+      <li>“Who can add items” rules, scrapbook-wide and per page: allowed or blocked roles and members (by role ID and user ID), the minimum time in the community, and opening and closing times. Per-page rules are visible only to admins.</li>
+    </ul>
+  </section>
+
+  <section id="reads">
+    <h2>What Scrapbook reads from Root but doesn't store</h2>
+    <ul class="list">
+      <li><b>Member nicknames</b>, to show who added an item and to list members for admins.</li>
+      <li><b>Member roles and community join dates</b>, to apply the community's “who can add items” rules. These are held in the app's memory for up to one minute, then discarded.</li>
+      <li><b>The community owner</b>, who is always a Scrapbook admin.</li>
+    </ul>
+  </section>
+
+  <section id="device">
+    <h2>What stays on your device</h2>
+    <p>Scrapbook keeps a few things in your Root client's local storage so it opens where you left it:</p>
+    <ul class="list">
+      <li>the last page you viewed, and where you were looking on each page;</li>
+      <li>a cache of pasted images you've already downloaded, so they load faster next time;</li>
+      <li>the shape style you last used.</li>
+    </ul>
+    <p>None of this is sent anywhere, and it's removed if you clear your Root client's data.</p>
+  </section>
+
+  <section id="never">
+    <h2>What Scrapbook doesn't do</h2>
+    <ul class="list">
+      <li>No advertising, analytics, tracking or profiling.</li>
+      <li>No selling or sharing of data with third parties.</li>
+      <li>No connections to services outside Root. Fonts and sticker art are bundled with the app.</li>
+      <li>No access to your camera, microphone, contacts or files, other than files you choose to upload or paste.</li>
+    </ul>
+  </section>
+
+  <section id="visibility">
+    <h2>Who can see what</h2>
+    <ul class="list">
+      <li><b>Community members</b> who can open the Scrapbook channel can see everything on every page, including the name of the member who added an item.</li>
+      <li><b>Scrapbook admins</b> (the community owner plus anyone chosen in the app's Admins setting) can also see the member list with how many items each member has added, and each member's community join date and roles when managing who can add items.</li>
+      <li><b>Root</b> hosts the data, as described in Root's Privacy Policy.</li>
+    </ul>
+  </section>
+
+  <section id="retention">
+    <h2>How long data is kept</h2>
+    <ul class="list">
+      <li>Items, pages and backgrounds are kept until someone removes them. Members can remove their own items; admins can remove any item, clear or resize a page, or delete pages.</li>
+      <li>Pasted images are deleted automatically once nothing on the scrapbook uses them. Unfinished or unused uploads are removed within about an hour.</li>
+      <li>Settings are kept until an admin changes them.</li>
+      <li>If the app is removed from a community, what happens to its stored data is governed by Root's policies.</li>
+    </ul>
+  </section>
+
+  <section id="choices">
+    <h2>Your choices</h2>
+    <ul class="list">
+      <li>You can remove anything you added at any time, unless an admin has locked it.</li>
+      <li>To ask about or remove other data relating to you in a community's scrapbook, contact that community's admins, or contact us as described under Contact below.</li>
+      <li>For your Root account and the data Root holds about you, see Root's Privacy Policy.</li>
+    </ul>
+    <h3>Children</h3>
+    <p>Scrapbook follows Root's age requirements and isn't intended for anyone who isn't allowed to use Root.</p>
+    <h3>Changes to this policy</h3>
+    <p>If this policy changes, we'll update the date at the top and publish the new version with the app.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      Questions about this policy: send a message to James, Scrapbook's developer, on Root, or ask your community's admins to pass your request on.
+    </div>
+  </section>
+
+  <footer>Scrapbook for Root · Privacy Policy</footer>
+</main>
+
+</body>
+</html>
